@@ -26,6 +26,13 @@ header {
   min-width: 500px;
   justify-content: space-evenly;
 }
+
+@media (max-width: 1100px) {
+  .nav_bar {
+    display: none;
+  }
+}
+
 .nav_bar a {
   font-size: 14px;
   letter-spacing: .3px;
@@ -52,12 +59,19 @@ header {
   display: flex;
   align-items: center;
 }
+
+@media (max-width: 650px) {
+  .search_bar {
+    display: none;
+  }
+}
+
 .search_icon {
   box-sizing: content-box;
   height: 20px;
   padding: 10px;
 
-  background-color: #f5f5f6;
+  background-color: #d7d7d7;
   color: #282c3f;
   font-weight: 300;
   border-radius: 4px 0 0 4px;
@@ -69,6 +83,7 @@ header {
   height: 40px;
   border: 0;
   border-radius: 0 4px 4px 0;
+  padding-left: 6px;
 }
 
 .action_bar {
@@ -80,7 +95,12 @@ header {
 .action_container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
+}
+
+.bag {
+  margin-top: 18px;
 }
 
 /* Main section */
